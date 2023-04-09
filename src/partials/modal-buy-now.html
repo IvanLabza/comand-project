@@ -10,67 +10,80 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
       rel="stylesheet">
-    <link
+      <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="/src/css/modal.css" >
+
+      <!-- intl-tel-input-plugin -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+      >
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+      <!-- plugin end -->
+
+      <!-- <link rel="stylesheet"  media="screen and (min-width: 1200px)"" href="/src/css/modal-buy-now-css/modal-buy.css" > -->
+      <link rel="styles0heet" media="screen and (max-device-width: 767px)" href="/src/css/modal-buy-now-css/modal-buy-mob.css" >
+      <!-- <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1199px)" href="/src/css/modal-buy-now-css/modal-buy-now-tab.css" > -->
     <link rel="stylesheet" href="/src/css/reset.css">
   </head>
 
 <body>
-    <button type="button" data-modal-open class="buy-now-button button">Buy now</button>
-<!-- Modal -->
-<div class="backdrop is-hidden" data-modal></div>
+<!-- <button data-modal-buy-open></button> -->
+    <!-- Modal -->
+<div class="backdrop is-hidden" data-modal>
 
 <div class="modal"> 
-    <button type="button" data-modal-close class="modal-close">
+    <button type="button" data-modal-close class="modal-close"> 
       <svg class="icon-close" width="20px" height="20px">
         <use href="/src/images/symbol-defs.svg#icon-x"></use>
       </svg>
     </button>
 
-    <p class="modal-title"><span class="title-buy">buy</span> now</p>
+    <p class="modal-title"><span class="title-colored">buy</span> now</p>
 
-    <div class="container buye-option-container">
+    <!-- <div class="container buy-option-container">
     <ul class="buy-option-list">
       <li class="card buy-option-item">
-        <img class="buy-option-img"src="/src/images/modal-img/dark-chocolate.jpg"alt="Dark Chocolate" width="120">
-      <button type="button" class="buy-option-button">100g</button>
+        <img class="buy-option-img"src="/src/images/modal-img/dark-chocolate.jpg" alt="Dark Chocolate" width="120">
+       <button type="button" class="buy-button">100g</button>
     </li>
+
       <li class="card buy-option-item">
         <img class="buy-option-img"src="/src/images/modal-img/white-chocolate.jpg"alt="White Chocolate" width="120">
-       <button type="button" class="buy-option-button">200g</button>
+       <button type="button" class="buy-button">200g</button>
       </li>
+      
       <li class="card buy-option-item">
         <img class="buy-option-img"src="/src/images/modal-img/milk-chocolate.jpg"alt="Milk Chocolate" width="120">
-       <button type="button" class="buy-option-button">300g</button>
+       <button type="button" class="buy-button">300g</button>
       </li>
     </ul>
-    </div>
+    </div> -->
 
     <form>
       
       <div class="form-group">
           <label class="form-label" for="name">
             <span>Personal information</span>
-            <span class="form-field">
-          <input 
+          <span class="form-field-name">
+            <input 
             type="text"
             name="name"
             id="name"
             class="form-input"
             placeholder="Name"
             required>
-	</span>
-	<span class="form-field">
-          <input 
+	        </span>
+	        <span class="form-field-name">
+            <input 
             type="text"
             name="surname"
             id="surname"
             class="form-input"
             placeholder="Surname"
             required>
-		</span>
+		      </span>
         </label>
       </div>
 
@@ -101,9 +114,9 @@
           name="phone" 
           id="phone"
           class="form-input"
+          pattern="[0-9]"
           placeholder="Phone number"
           required >
-          </span>
         </label>
       </div>
 
@@ -112,6 +125,7 @@
         <span>Card number</span>
         <span class="form-field"> 
         <input
+        type="number"
         class="cc-number"
         id="cc-number"
         name="cardNumber"
@@ -123,7 +137,7 @@
         placeholder="Enter card"
         required >
         <span class="form-icon"><svg class="card-icon" width="32px" height="18px">
-          <use href="/images/symbol-defs.svg#icon-mastercard"></use>
+          <use href="/src/images/symbol-defs.svg#icon-mastercard"></use>
         </svg>
       </span>
         </span>
@@ -144,12 +158,16 @@
   
    
           
-        <button type="submit" class="form-button button">Send</button>
+        <button type="submit" class="form-button button submit-btn">Submit</button>
       </form>
     </div>
 
 </div>
+</div>
+
+    <!-- <script src="/src/modal.js"></script> -->
+    <script src="/src/js/modal-phone-areacode.js"></script>
+    <script src="/src/js/modal-buy.js"></script>
 
 
-    <script src="./js/modal.js"></script>
 </body>
