@@ -3,14 +3,6 @@
 	visibility: hidden;
 	pointer-events: none;
     } 
-    .btn{
-        width: 60px;
-        height:30px;
-        border-radius: 15px;
-        background: #000;
-        color: #ffffff
-    }
-
 
 .backdrop {
     width: 100%;
