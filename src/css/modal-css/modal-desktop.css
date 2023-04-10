@@ -1,0 +1,88 @@
+@media screen and (min-width: 1200px){
+
+	.modal-buy{
+        width: 609px;
+        height: 1058px;
+        padding: 48px;
+    }
+
+	.modal-review{
+        width: 517px;
+        height: 631px;
+        padding: 40px;
+    }
+
+    .modal-title-buy{
+        width: 298px;
+        margin-bottom: 40px;
+
+        line-height: calc(28/24);
+    }
+
+	.modal-title{
+        width: 298px;
+        margin-bottom: 40px;
+
+        font-size: 24px;
+        line-height: calc(28/24);
+    }
+
+	.name-wrap{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+
+    .modal-close {
+        top: 24px;
+        right: 24px;
+              
+        height: 28px;
+        width: 28px;
+    }
+
+    .modal-form{
+        height: 392px;
+    }
+
+	.modal-form-input{
+        font-size: 18px;
+        line-height: calc(22/18);
+
+        width: 513px;
+        height: 66px;
+        padding: 14px 18px;
+        color: rgba(64, 64, 64, 0.3);
+    }
+
+
+
+    .modal-form-textarea{
+        width: 437px;
+        height: 137px;
+        padding: 22px 24px;
+        margin-bottom: 18px;
+    }
+
+    .form-button{
+        width: 117px;
+        height: 45px;
+        margin-left: auto;
+    }
+
+	.buy-option-item{
+		padding-bottom: 18px;
+	
+		/* background: #FFFFFF;
+		border: 1px solid rgba(17, 17, 17, 0.1);
+		border-radius: 15px; */
+	}
+
+	.modal-form-name{
+		display: flex;
+		flex-direction: row;
+		gap: 21px;
+	}
+
+}
+

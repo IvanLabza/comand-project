@@ -20,11 +20,11 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
       <!-- plugin end -->
     
-    <link rel="stylesheet" href="/src/css/main-modal.css">
+    <link rel="stylesheet" href="/src/css/modal-css/main-modal.css">
  
-    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 767px)" href="/src/css/modal-review-css/modal-review-mob.css" >
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1199px)" href="/src/css/modal-review-css/modal-review-tab.css" >
-    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="/src/css/modal-review-css/modal-review-desktop.css" >
+    <link rel="stylesheet" media="screen and (min-width: 280px) and (max-width: 767px)" href="/src/css/modal-css/modal-mobile.css" >
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1199px)" href="/src/css/modal-css/modal-tablet.css" >
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="/src/css/modal-css/modal-desktop.css" >
   </head>
  
 <body>
@@ -32,72 +32,67 @@
     <!-- modal -->
   <div class="backdrop is-hidden" data-modal>
 
-    <div class="modal"> 
-        <button type="button" data-modal-close class="modal-close"> 
+    <div class="modal modal-review"> 
+        <button type="button" data-modal-close class="review-modal-close modal-close"> 
           <svg class="icon-close" width="20px" height="20px">
             <use href="/src/images/symbol-defs.svg#icon-x"></use>
           </svg>
         </button>
     
-        <p class="modal-title">leave a review about <span class="title-colored">our chocolate</span></p>
+        <p class="modal-title modal-title-review">leave a review about <span class="title-colored">our chocolate</span></p>
   
-  <form class="modal-form form">
-      
-    <div class="form-group">
-        <label class="form-label" for="name">
-        <span class="form-field">
-          <input 
-          type="text"
-          name="name"
-          id="name"
-          class="form-input"
-          placeholder="Name"
-          required>
-          </span>
-        </label>
-    </div>
+  <form class="modal-form modal-form-review form">
      
-  <div class="form-group">
-    <label class="form-label" for="email">
-        <span class="form-field">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          class="form-input"
-          placeholder="Enter your email"
-          required >
+    <label class="modal-form-field">
+        <span class="modal-form-input-wrapper">
+          <input
+            class="modal-form-input form-input"
+            type="text"
+            name="name"
+            pattern="[a-zA-Zа-яА-Я]+"
+            required
+            minlength="2"
+            placeholder="Name"
+            >
         </span>
     </label>
-   </div>
 
-    <div class="form-group">
-    <label class="form-label" for="phone">
-        <span class="form-field phone-input"> 
-        <input
-        type="number"
-        name="phone" 
-        id="phone"
-        class="form-input"
-        placeholder="Phone number"
-        required >
+    <label class="modal-form-field" for="email">
+        <span class="modal-form-input-wrapper">
+          <input
+            id="email"
+            class="modal-form-input form-input"
+            type="email"
+            name="email"
+            pattern="[A-Za-z0-9]"
+            placeholder="Enter your email"
+            required
+          >
         </span>
-    </label>
-    </div>
+      </label>
 
-      <div class="form-group">
-      <div class="form-field">  
-      <label class="form-label" for="comment">
+      <label class="modal-form-field phone" for="phone">
+        <span class="modal-form-input-wrapper">
+              <input
+              class="modal-form-input form-input"
+               type="number"
+               name="phone" 
+               id="phone"
+               placeholder="Phone number"
+               required >
+        </span>
+       </label>
+
+       <label class="modal-form-field" for="comment">
         <textarea 
           name="comment"
           id="comment"
           rows="10"
-          class="text-input"
+          class="modal-form-textarea form-input review-text"
           placeholder="Enter text"></textarea>
         </label>
-      </div></div>
       
-   <button type="submit" class="form-button button submit-btn">Send</button>
+   <button type="submit" class="form-button button review-send-btn">Send</button>
     </form>
   </div>
 
