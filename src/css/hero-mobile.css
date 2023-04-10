@@ -29,8 +29,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 20px;
-  margin-left: 20px;
   margin-bottom: 72px;
+  margin-left: 20px;
 }
 
 @media (min-device-pixel-ratio: 2),
