@@ -22,6 +22,9 @@ li {
 img {
   display: block;
 }
+.hero-container {
+  padding-bottom: 20px;
+}
 
 .hero {
   background-image: url(../images/mobile/mobile-hero.jpg);
@@ -31,6 +34,7 @@ img {
   margin-right: 20px;
   margin-left: 20px;
   margin-bottom: 72px;
+  
 }
 
 @media (min-device-pixel-ratio: 2),
