@@ -11,6 +11,7 @@
     margin: auto;
     margin-right: 32px;
     margin-left: 32px;
+    margin-bottom: 72px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -20,5 +21,9 @@
     .hero {
       background-image: url(../images/hero/desctop-hero@2x.jpg);
     }
+  }
+
+  .hero-nav-btn {
+    padding: 0;
   }
 }
