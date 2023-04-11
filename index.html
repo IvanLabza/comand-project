@@ -15,19 +15,38 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="/src/css/modal.css" />
-    <link rel="stylesheet" href="/src/css/reset.css" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/comand-project/assets/index-2371cf23.js"></script>
-    <link rel="stylesheet" href="/comand-project/assets/index-2bdbf969.css">
+    <script type="module" crossorigin src="/comand-project/assets/index-ef10940f.js"></script>
+    <link rel="stylesheet" href="/comand-project/assets/index-f41773e9.css">
   </head>
 
   <body>
+
+    <div class="modal-review-bd is-hidden" data-modal>
+    <div class="modal-review-conteiner">
+        <button type="button" class="modal-review-close" data-modal-close></button>
+        <h2 class="modal-review-title"></h2>
+        <form class="modal-review-form">
+
+            <input class="modal-review-input" type="text"  name="username">
+
+            <input class="modal-review-input" type="email" name="email">
+
+            <input class="modal-review-input" type="tel" name="tel">
+
+            <textarea class="modal-review-text" name="coment"></textarea>
+
+            <button type="submit" class="modal-review-sub"></button>
+
+        </form>
+    
+    </div>
+</div>
+
 
     <header class="header">
   <div class="container header-container">
@@ -848,7 +867,7 @@
             <div class="slider-pagination"></div>
         </div>
 
-    <button class="reviews-btn" type="button" data-modal-review-open>
+    <button class="reviews-btn" type="button" data-modal-open>
         Leave a review
     </button>
 
