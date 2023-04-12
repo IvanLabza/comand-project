@@ -20,11 +20,110 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/comand-project/assets/index-27c65ccd.js"></script>
-    <link rel="stylesheet" href="/comand-project/assets/index-f4e924a7.css">
+    <script type="module" crossorigin src="/comand-project/assets/index-5487236f.js"></script>
+    <link rel="stylesheet" href="/comand-project/assets/index-b08a7dcb.css">
   </head>
 
   <body>
+
+    <!-- Modal -->
+<div class="backdrop is-hidden" buy-data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close" buy-modal-close>
+      <svg class="icon-close" width="20" height="20">
+        <use href="/comand-project/assets/symbol-defs-12b69d81.svg#icon-x"></use>
+      </svg>
+    </button>
+    <p class="modal-title"><span class="title-buy">buy</span> now</p>
+    <div class="container buye-option-container">
+      <ul class="buy-option-list">
+        <li class="card buy-option-item">
+          <img class="buy-option-img" src="data:image/jpeg;base64,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" alt="Dark Chocolate"
+            width="120" />
+          <button type="button" class="buy-option-button">100g</button>
+        </li>
+        <li class="card buy-option-item">
+          <img class="buy-option-img" src="data:image/jpeg;base64,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" alt="White Chocolate"
+            width="120" />
+          <button type="button" class="buy-option-button">200g</button>
+        </li>
+        <li class="card buy-option-item">
+          <img class="buy-option-img" src="data:image/jpeg;base64,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" alt="Milk Chocolate"
+            width="120" />
+          <button type="button" class="buy-option-button">300g</button>
+        </li>
+      </ul>
+    </div>
+    <form>
+      <div class="form-group">
+        <label class="form-label personal-information">
+          <span class="label-personal-information label">Personal information</span>
+          <div class="shape-personal-information">
+            <span class="form-field">
+              <input type="text" name="name" class="form-input form-per-info" placeholder="Name" required />
+            </span>
+            <span class="form-field">
+              <input type="text" name="surname" class="form-input form-per-info" placeholder="Surname" required />
+            </span>
+          </div>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-label">
+          <div class="shape-email">
+            <span class="label-email label">Email</span>
+            <span class="form-field">
+              <input type="email" name="email" class="form-input form-per-email" placeholder="Enter your email"
+                required />
+            </span>
+          </div>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-label">
+          <span class="label-phone-number label">Phone number</span>
+          <span class="form-field">
+            <input type="number" name="phone" class="form-input form-per-phone" placeholder="Phone number" required />
+          </span>
+        </label>
+      </div>
+      <div class="form-group">
+        <label class="form-label">
+          <span class="label-card-number label">Card number</span>
+          <span class="form-field">
+            <div class="card-and-logomaster">
+              <input class="cc-number form-per-card form-input" name="cardNumber" autocomplete="off" maxlength="20"
+                inputmode="numeric" pattern="[0-9]*" placeholder="Enter card" required />
+              <span class="form-icon"><svg class="card-icon" width="60" height="30">
+                  <use href="/comand-project/assets/symbol-defs-12b69d81.svg#icon-mastercard"></use>
+                </svg>
+              </span>
+            </div>
+          </span>
+        </label>
+      </div>
+      <div class="form-group">
+        <div class="form-field">
+          <label class="form-label"><span class="label-comment label">Comment</span>
+            <textarea name="comment" rows="10" class="text-input form-input" placeholder="Enter text"></textarea>
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="form-button button">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="modal-reviews-bd is-hidden" data-modal>
     <div class="modal-reviews-conteiner">
@@ -218,7 +317,7 @@
     <div class="hero-content">
       <div class="buttons-hero">
 
-        <button class="button-hero-main data-modal-open" type="button" data-modal-buy-open>
+        <button class="button-hero-main data-modal-open" type="button" buy-modal-open>
           Buy Now
         </button>
 
@@ -924,7 +1023,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subscriber-button">Subscribe</button>
+    <button type="button" class="subscriber-button" explorer-modal-open>Subscribe</button>
   </div>
 </section>
     </main>
@@ -999,6 +1098,8 @@
   </div>
 </footer>
 
+
+    
     
     
     
